@@ -1,0 +1,11 @@
+<h1>Memory!</h1>
+
+<h3><button (click)="newGame()">New Game!</button></h3>
+
+<div class="grid">
+	<div *ngFor="let card of gameCards; index as cardId">
+		<div class="grid-item">
+			<img src={{card.background}} (click)="onClick(card)" id='card'>
+		</div>
+	</div>
+</div>
